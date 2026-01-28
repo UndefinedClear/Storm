@@ -1,0 +1,15 @@
+C:\Users\avirt\Desktop\Storm\Storm\bin\Debug\net9.0\Storm.exe
+C:\Users\avirt\Desktop\Storm\Storm\bin\Debug\net9.0\Storm.deps.json
+C:\Users\avirt\Desktop\Storm\Storm\bin\Debug\net9.0\Storm.runtimeconfig.json
+C:\Users\avirt\Desktop\Storm\Storm\bin\Debug\net9.0\Storm.dll
+C:\Users\avirt\Desktop\Storm\Storm\bin\Debug\net9.0\Storm.pdb
+C:\Users\avirt\Desktop\Storm\Storm\obj\Debug\net9.0\Storm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\avirt\Desktop\Storm\Storm\obj\Debug\net9.0\Storm.AssemblyInfoInputs.cache
+C:\Users\avirt\Desktop\Storm\Storm\obj\Debug\net9.0\Storm.AssemblyInfo.cs
+C:\Users\avirt\Desktop\Storm\Storm\obj\Debug\net9.0\Storm.csproj.CoreCompileInputs.cache
+C:\Users\avirt\Desktop\Storm\Storm\obj\Debug\net9.0\Storm.sourcelink.json
+C:\Users\avirt\Desktop\Storm\Storm\obj\Debug\net9.0\Storm.dll
+C:\Users\avirt\Desktop\Storm\Storm\obj\Debug\net9.0\refint\Storm.dll
+C:\Users\avirt\Desktop\Storm\Storm\obj\Debug\net9.0\Storm.pdb
+C:\Users\avirt\Desktop\Storm\Storm\obj\Debug\net9.0\Storm.genruntimeconfig.cache
+C:\Users\avirt\Desktop\Storm\Storm\obj\Debug\net9.0\ref\Storm.dll
