@@ -10,13 +10,16 @@ class Program
 
         Alias alias_history = new Alias(["--his", "--h", "-h", "-history", "-his", "--history"]);
         Alias alias_restore = new Alias(["--res", "--r", "-r", "-restore", "-res", "--restore"]);
+        Alias alias_permanent = new Alias(["-p", "--permament", "--permanent"]);
+
 
         if (args.Length == 0)
         {
-            Console.WriteLine("Usage:");
-            Console.WriteLine($"  --history (ALIASES: {alias_history.ToString()})");
-            Console.WriteLine($"  --restore <ID|VERSION> <FILENAME> (ALIASES: {alias_restore.ToString()})");
-            Console.WriteLine("  <files...> to trash");
+            Utils.WrteLineColor("Usage:", ConsoleColor.Green);
+            Utils.WrteLineColor($"  --history (ALIASES: {alias_history.ToString()})", ConsoleColor.DarkGreen);
+            Utils.WrteLineColor($"  --permament <files...> (ALIASES: {alias_permanent.ToString()})", ConsoleColor.DarkGreen);
+            Utils.WrteLineColor($"  --restore <ID|VERSION> <FILENAME> (ALIASES: {alias_restore.ToString()})", ConsoleColor.DarkGreen);
+            Utils.WrteLineColor("  <files...> to trash", ConsoleColor.DarkGreen);
             return;
         }
 
@@ -38,6 +41,16 @@ class Program
 
             Restore(args[1], args[2]);
         }
+        else if (alias_permanent.Have(args[0]))
+        {
+            if (args.Length < 2)
+            {
+                Utils.WrteLineColor("Error: --permament requires at least one file or folder", ConsoleColor.Red);
+                return;
+            }
+
+            PermanentDelete(args.Skip(1).ToArray());
+        }
         else if (args[0].StartsWith("-"))  // Unknown flag
         {
             Utils.WrteLineColor($"Unknown option: {args[0]}", ConsoleColor.Red);
@@ -49,6 +62,43 @@ class Program
         }
 
     }
+
+    static void PermanentDelete(string[] paths)
+    {
+        Utils.WrteLineColor("WARNING: Permanent deletion cannot be undone!", ConsoleColor.Yellow);
+        Utils.WrteLineColor("Are you Sure? (y/n)", ConsoleColor.Red);
+
+        string ?answer = Console.ReadLine();
+
+        if (answer == "") return;
+        else if (answer.ToLower() == "y") { }
+
+        foreach (var path in paths)
+        {
+            try
+            {
+                if (File.Exists(path))
+                {
+                    File.Delete(path);
+                    Utils.WrteLineColor($"Permanently deleted file '{path}'", ConsoleColor.Red);
+                }
+                else if (Directory.Exists(path))
+                {
+                    Directory.Delete(path, true);
+                    Utils.WrteLineColor($"Permanently deleted directory '{path}'", ConsoleColor.Red);
+                }
+                else
+                {
+                    Console.WriteLine($"Path not found: {path}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Utils.WrteLineColor($"Failed to delete '{path}': {ex.Message}", ConsoleColor.Red);
+            }
+        }
+    }
+
 
     class Alias
     {
@@ -168,7 +218,7 @@ class Program
 
             string line = $"{entry.Id,-4} | {entry.Version,-20} | {contents}";
             if (i == 0)
-                PrintRed(line + " (LAST DELETED)");
+                PrintRed(line + " (LAST TEMPED)");
             else
                 PrintRedIdOnly(entry.Id, line);
         }
