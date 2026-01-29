@@ -6,12 +6,6 @@ storm
 ```
 ![Help](images/help.png)
 
-## Help Command
-```bash
-storm
-```
-![Help](images/help.png)
-
 ## Move to trash Command (Can more than one and dirs too!)
 ```bash
 storm test.txt
