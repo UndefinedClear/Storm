@@ -37,7 +37,6 @@ You can also use the provided build scripts to generate a standalone executable 
 - **Linux:** Run `Storm/build.sh` (make sure to `chmod +x build.sh` first)
 
 These scripts create a self-contained, single-file release.
-`
 
 Or download the latest build from the **Releases** section.
 

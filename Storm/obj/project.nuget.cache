@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "LsmrrSUSX+I=",
+  "dgSpecHash": "YDctZ3iT9r4=",
   "success": true,
   "projectFilePath": "C:\\Users\\avirt\\Desktop\\Storm\\Storm\\Storm.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\avirt\\.nuget\\packages\\microsoft.net.illink.tasks\\9.0.6\\microsoft.net.illink.tasks.9.0.6.nupkg.sha512",
+    "C:\\Users\\avirt\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\9.0.6\\microsoft.netcore.app.runtime.win-x86.9.0.6.nupkg.sha512",
+    "C:\\Users\\avirt\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\9.0.6\\microsoft.windowsdesktop.app.runtime.win-x86.9.0.6.nupkg.sha512",
+    "C:\\Users\\avirt\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\9.0.6\\microsoft.aspnetcore.app.runtime.win-x86.9.0.6.nupkg.sha512"
+  ],
   "logs": []
 }
