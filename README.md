@@ -95,7 +95,7 @@ Stable builds are available in the **Releases** section:
 
 Found a bug or have a feature request?
 Open an issue here:
-👉 [https://github.com/UndefinedClear/storm/issues](https://github.com/UndefinedClear/storm/issues)
+👉 [https://github.com/UndefinedClear/Storm/issues](https://github.com/UndefinedClear/Storm/issues)
 
 Please include:
 
