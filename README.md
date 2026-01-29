@@ -1,6 +1,5 @@
 # ⚡ Storm — Don't lose your files!
-
-> Simple, fast and powerful file versioning right from your terminal.
+### Simple, fast and powerful file versioning right from your terminal.
 
 ---
 
