@@ -1,6 +1,7 @@
-# ⚡ Storm - Don't loose your files!
+# ⚡ Storm — Don't lose your files!
+
 ## Help Command
 ```bash
 storm
 ```
-[!images/help.png]
+![Help](images/help.png)
