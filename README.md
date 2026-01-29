@@ -1,4 +1,3 @@
-# ⚡ Storm — Don't lose your files!
 ![banner](images/banner.png)
 
 ![.NET](https://img.shields.io/badge/.NET-9.0-purple)
