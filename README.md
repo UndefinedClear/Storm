@@ -4,8 +4,6 @@
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-
-
 ---
 
 ## ✨ Features
@@ -23,10 +21,23 @@
 > ⚠ **.NET 9.0 SDK or newer is recommended**
 
 ```bash
+# Clone the repository
 git clone https://github.com/UndefinedClear/Storm.git
 cd Storm
+
+# Quick build (automatically selects SDK version)
 dotnet build
-````
+```
+
+### ⚡ Automated Build
+
+You can also use the provided build scripts to generate a standalone executable in the `publish` folder:
+
+- **Windows:** Run `Storm/build.bat`
+- **Linux:** Run `Storm/build.sh` (make sure to `chmod +x build.sh` first)
+
+These scripts create a self-contained, single-file release.
+`
 
 Or download the latest build from the **Releases** section.
 
@@ -91,9 +102,9 @@ Each operation is versioned with a timestamp, making recovery simple and reliabl
 
 ## ⚙ Requirements
 
-* **.NET 9.0 SDK (recommended)**
-* Windows, Linux, or macOS
-* Terminal with ANSI color support
+- **.NET 9.0 SDK (recommended)**
+- Windows, Linux, or macOS
+- Terminal with ANSI color support
 
 ---
 
@@ -114,9 +125,9 @@ Open an issue here:
 
 Please include:
 
-* What happened
-* Steps to reproduce
-* Your OS and Storm version
+- What happened
+- Steps to reproduce
+- Your OS and Storm version
 
 ---
 
@@ -131,8 +142,8 @@ Pull Requests are welcome!
 
 Before submitting, please:
 
-* Follow the existing code style
-* Test your changes
+- Follow the existing code style
+- Test your changes
 
 ---
 
@@ -147,14 +158,14 @@ Small PRs are reviewed faster 😉
 
 Planned improvements and upcoming features:
 
-* [ ] Auto-clean old history versions
-* [ ] Config file support (`storm.config`)
-* [ ] Ignore patterns (like `.gitignore`)
-* [ ] Restore preview before confirming
-* [ ] Compression for stored versions
-* [ ] Global install via `dotnet tool`
-* [ ] Interactive TUI mode
-* [ ] Performance improvements for large directories
+- [ ] Auto-clean old history versions
+- [ ] Config file support (`storm.config`)
+- [ ] Ignore patterns (like `.gitignore`)
+- [ ] Restore preview before confirming
+- [ ] Compression for stored versions
+- [ ] Global install via `dotnet tool`
+- [ ] Interactive TUI mode
+- [ ] Performance improvements for large directories
 
 Have an idea? Open an issue and share it!
 
