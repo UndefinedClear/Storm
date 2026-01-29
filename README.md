@@ -1,10 +1,11 @@
 # ⚡ Storm — Don't lose your files!
+![banner](images/banner.png)
 
 ![.NET](https://img.shields.io/badge/.NET-9.0-purple)
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-> Simple, fast and powerful file versioning right from your terminal.
+
 
 ---
 
