@@ -16,8 +16,8 @@
 ## 🚀 Installation
 
 ```bash
-git clone https://github.com/UndefinedClear/storm.git
-cd storm
+git clone https://github.com/UndefinedClear/Storm.git
+cd Storm
 dotnet build
 ````
 
