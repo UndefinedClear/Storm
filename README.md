@@ -38,7 +38,14 @@ You can also use the provided build scripts to generate a standalone executable 
 
 These scripts create a self-contained, single-file release.
 
-Or download the latest build from the **Releases** section.
+---
+
+## 📦 Releases
+
+Stable builds are available in the **[Releases](<https://github.com/UndefinedClear/Storm/releases>)** section:
+➡ Download compiled binaries
+➡ View changelogs
+➡ Access previous versions
 
 ---
 
@@ -104,15 +111,6 @@ Each operation is versioned with a timestamp, making recovery simple and reliabl
 - **.NET 9.0 SDK (recommended)**
 - Windows, Linux, or macOS
 - Terminal with ANSI color support
-
----
-
-## 📦 Releases
-
-Stable builds are available in the **Releases** section:
-➡ Download compiled binaries
-➡ View changelogs
-➡ Access previous versions
 
 ---
 
