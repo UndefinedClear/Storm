@@ -3,4 +3,4 @@
 ```bash
 storm
 ```
-[help_image](<images/help.png>)
+[!images/help.png]
