@@ -1,4 +1,9 @@
 # ⚡ Storm — Don't lose your files!
+
+![.NET](https://img.shields.io/badge/.NET-9.0-purple)
+![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 > Simple, fast and powerful file versioning right from your terminal.
 
 ---
@@ -14,6 +19,8 @@
 ---
 
 ## 🚀 Installation
+
+> ⚠ **.NET 9.0 SDK or newer is recommended**
 
 ```bash
 git clone https://github.com/UndefinedClear/Storm.git
@@ -82,6 +89,14 @@ Each operation is versioned with a timestamp, making recovery simple and reliabl
 
 ---
 
+## ⚙ Requirements
+
+* **.NET 9.0 SDK (recommended)**
+* Windows, Linux, or macOS
+* Terminal with ANSI color support
+
+---
+
 ## 📦 Releases
 
 Stable builds are available in the **Releases** section:
@@ -125,6 +140,23 @@ Before submitting, please:
 
 All improvements, fixes, and ideas are appreciated.
 Small PRs are reviewed faster 😉
+
+---
+
+## 🗺 Roadmap
+
+Planned improvements and upcoming features:
+
+* [ ] Auto-clean old history versions
+* [ ] Config file support (`storm.config`)
+* [ ] Ignore patterns (like `.gitignore`)
+* [ ] Restore preview before confirming
+* [ ] Compression for stored versions
+* [ ] Global install via `dotnet tool`
+* [ ] Interactive TUI mode
+* [ ] Performance improvements for large directories
+
+Have an idea? Open an issue and share it!
 
 ---
 
